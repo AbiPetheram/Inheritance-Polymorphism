@@ -10,4 +10,8 @@ public abstract class Vehicles {
         this.make = make;
         this.model = model;
     }
+
+    public void start() {
+        engine.start();
+    };
 }
