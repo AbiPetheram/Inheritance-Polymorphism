@@ -1,10 +1,11 @@
 package shapes;
 
 public class Cube extends Shape3D{
-    int size;
+    double size;
     Rectangle base;
 
-    public Cube(int size) {
+    public Cube(double size) {
+        this(new Rectangle(size, size));
         this.size = size;
     }
 
@@ -14,6 +15,11 @@ public class Cube extends Shape3D{
 
     @Override
     public double calculateVolume() {
-        return 0;
+        return this.size * this.size * this.size;
+    }
+
+    @Override
+    public Shape getBase() {
+        return this.base;
     }
 }

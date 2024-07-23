@@ -5,7 +5,5 @@ public abstract class Shape3D {
 
     public abstract double calculateVolume();
 
-    public Shape getBase() {
-        return base;
-    }
+    public abstract Shape getBase();
 }

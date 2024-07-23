@@ -9,6 +9,11 @@ public class Sphere extends Shape3D{
 
     @Override
     public double calculateVolume() {
-        return (4/3)*(3.14*(this.base.radius * this.base.radius * this.base.radius));
+        return (4.0/3.0)*(3.14*(this.base.radius * this.base.radius * this.base.radius));
+    }
+
+    @Override
+    public Shape getBase() {
+        return this.base;
     }
 }

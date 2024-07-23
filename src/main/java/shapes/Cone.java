@@ -14,4 +14,9 @@ public class Cone extends Shape3D{
     public double calculateVolume() {
         return (this.base.calculateArea() * this.height)/3;
     }
+
+    @Override
+    public Shape getBase() {
+        return this.base;
+    }
 }
