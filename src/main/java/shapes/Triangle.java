@@ -1,8 +1,8 @@
 package shapes;
 
 public class Triangle extends Shape {
-   int base;
-   int height;
+   double base;
+   double height;
 
 
    public Triangle(int base, int height){
@@ -11,7 +11,8 @@ public class Triangle extends Shape {
 
    }
     @Override
-    public void calculateArea() {
-
+    public double calculateArea() {
+        double area = (this.base * this.height)/2;
+        return area;
     }
 }
