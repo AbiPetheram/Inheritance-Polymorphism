@@ -9,7 +9,6 @@ public class Circle extends Shape{
 
     @Override
     public double calculateArea() {
-        double area = 3.14 * (this.radius * this.radius);
-        return area;
+        return 3.14 * (this.radius * this.radius);
     }
 }

@@ -12,7 +12,6 @@ public class Triangle extends Shape {
    }
     @Override
     public double calculateArea() {
-        double area = (this.base * this.height)/2;
-        return area;
+        return (this.base * this.height)/2;
     }
 }
