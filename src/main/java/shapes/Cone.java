@@ -1,6 +1,6 @@
 package shapes;
 
-public class Cone {
+public class Cone extends Shape3D{
     double height;
     Circle base;
 
@@ -8,5 +8,10 @@ public class Cone {
         this.base = base;
         this.height = height;
 
+    }
+
+    @Override
+    public double calculateVolume() {
+        return 0;
     }
 }
